@@ -52,6 +52,7 @@ namespace XamToDoList
             edititem.PutExtra("Details", ToDoItem.Details);
             edititem.PutExtra("ListID", ToDoItem.ListID);
 
+            //   StartActivity(EditItem);
 
 
 
