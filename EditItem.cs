@@ -25,8 +25,8 @@ namespace XamToDoList
 
         //this comes in from the Main Activity
         int ListId;
-        String Title;
-        String Details;
+        String EditTitle;
+        String EditDetails;
 
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -48,8 +48,8 @@ namespace XamToDoList
 
             //getting data from the MainActivity
             ListId = Intent.GetIntExtra("ListID", 0);
-            Title = Intent.GetStringExtra("Title");
-            Details = Intent.GetStringExtra("Details");
+            EditTitle = Intent.GetStringExtra("Title");
+            EditDetails = Intent.GetStringExtra("Details");
 
 
         }

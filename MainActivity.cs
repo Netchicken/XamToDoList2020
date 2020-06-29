@@ -28,7 +28,7 @@ namespace XamToDoList
 
 
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.activity_main);
+            SetContentView(Resource.Layout.Main);
 
             myList.AddRange(DatabaseManager.ViewAll());
 
@@ -52,7 +52,7 @@ namespace XamToDoList
             edititem.PutExtra("Details", ToDoItem.Details);
             edititem.PutExtra("ListID", ToDoItem.ListID);
 
-            //   StartActivity(EditItem);
+              StartActivity(typeof(EditItem));
 
 
 
